@@ -35,7 +35,7 @@ export const createUserForm = id => {
         <input type="text" name="firstName">
         </label>
         <label> Last Name:
-        <input type="text" name="LastName">
+        <input type="text" name="lastName">
         </label>
         <button type="submit">Save</button>
     </form>
