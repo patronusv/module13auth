@@ -43,6 +43,9 @@ export const createSignInForm = () => {
         refs.navigation
           .querySelector('[data-page="logOut"]')
           .classList.toggle('hidden');
+        refs.navigation
+          .querySelector('[data-page="users"]')
+          .classList.toggle('hidden');
       });
   };
   refs.signInForm.addEventListener('input', getUserData);

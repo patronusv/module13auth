@@ -20,3 +20,16 @@ body {
 .hidden {
   display: none;
 }
+.flexible {
+  display: flex;
+}
+.list {
+  list-style: none;
+}
+.list-item {
+  margin-left: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}

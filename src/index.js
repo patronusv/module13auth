@@ -5,6 +5,7 @@ import { state } from './data/data';
 import { createSignUpForm } from './components/auth/forms/signUpForm';
 import { createSignInForm } from './components/auth/forms/signInForm';
 import { createHome } from './components/pages/home';
+import { createUsersList } from './components/users/usersList/usersList';
 createHome();
 const getPage = e => {
   if (e.target === e.currentTarget) {
@@ -22,6 +23,9 @@ const getPage = e => {
       break;
     case 'logOut':
       createHome();
+      break;
+    case 'users':
+      createUsersList();
       break;
     default:
       createHome();
@@ -72,6 +76,9 @@ const logOutHandler = () => {
     .classList.toggle('hidden');
   refs.navigation
     .querySelector('[data-page="logOut"]')
+    .classList.toggle('hidden');
+  refs.navigation
+    .querySelector('[data-page="users"]')
     .classList.toggle('hidden');
 };
 refs.navigation
